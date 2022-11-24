@@ -93,6 +93,7 @@ div .site-content .content-area {
 .search_area {
   display: flex;
   height: auto;
+  flex-wrap: wrap;
 }
 .site-content .search_area {
   width: 35%;
