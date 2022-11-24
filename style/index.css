@@ -75,6 +75,9 @@ nav ul li a:hover::before {
 div .site-content {
   background: #b87878;
   padding: 1em;
+  display: flex;
+  column-gap: 20px;
+  align-items: flex-start;
 }
 
 div .site-content .content-area {
@@ -85,6 +88,29 @@ div .site-content .content-area {
     sau nó sẽ có khoảng cách*/
   padding-left: 20px;
   padding-right: 10px;
+  order: 1;
+}
+.search_area {
+  display: flex;
+  height: auto;
+}
+.site-content .search_area {
+  width: 35%;
+  order: 2;
+}
+.site-content .search_area .label_input_search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #6efce4;
+  cursor: pointer;
+}
+.site-content .search_area input {
+  outline: none;
+  padding: 10px;
+  height: fit-content;
+  border: 1px solid transparent;
 }
 
 article .content-name {
@@ -195,12 +221,19 @@ article .entry-content .table-of-contents ol li:last-child {
 
   .site-content {
     font-size: 12px;
+    flex-direction: column;
+    row-gap: 20px;
   }
 
   div .site-content .content-area {
     width: 100%;
     padding: 0;
     margin: 0;
+    order: 2;
+  }
+  .site-content .search_area {
+    width: 100%;
+    order: 1;
   }
 
   article .entry-content .table-of-contents {
