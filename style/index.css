@@ -1,0 +1,217 @@
+.container {
+  background-color: #ffffff;
+  width: 70%;
+  margin: 0 auto;
+}
+
+header .logo {
+  padding: 0em;
+  background: #c2f895;
+  width: 15%;
+}
+
+header .logo img {
+  width: 100%;
+  height: 100%;
+}
+
+nav {
+  min-height: 50px;
+  height: auto;
+  display: flex;
+  background: #e8f0fe;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 50px;
+  /* padding-top: 10px; */
+  margin-left: 60px;
+  position: relative;
+}
+nav ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: rgb(89, 88, 88);
+}
+.humberger {
+  display: none;
+  font-size: 20px;
+  padding: 10px;
+  margin-left: auto;
+  cursor: pointer;
+}
+.humberger i {
+  pointer-events: none;
+}
+nav ul li a::before {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: rgb(88, 88, 88);
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 150ms;
+}
+
+nav ul li a:hover::before {
+  width: 100%;
+}
+
+div .site-content {
+  background: #b87878;
+  padding: 1em;
+}
+
+div .site-content .content-area {
+  width: 65%;
+  background: #bbe44c;
+  display: block;
+  /*area này độc lập 
+    sau nó sẽ có khoảng cách*/
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+article .content-name {
+  font-weight: bold;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+article .entry-author {
+  font-size: 85%;
+  color: #999;
+  margin-bottom: 1em;
+
+  background: #fcbed0;
+}
+
+article .entry-image img {
+  width: 100%;
+  object-fit: contain;
+}
+
+article .entry-content {
+  padding-left: 1.2em;
+  background: #6efce4;
+  padding-bottom: 10px;
+}
+
+article .entry-content p {
+  font-style: normal;
+  text-decoration: none;
+  line-height: 1.4;
+}
+
+article .entry-content p a {
+  color: #428bca;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+article .entry-content p a:hover {
+  color: #013c96;
+}
+
+article .entry-content .table-of-contents {
+  background: #f3f4f4;
+  margin-bottom: 1em;
+  width: 60%;
+}
+
+article .entry-content .table-of-contents p {
+  padding: 5px 5px 0;
+}
+
+article .entry-content .table-of-contents .table-content-list {
+  display: block;
+}
+
+article .entry-content .table-of-contents ol {
+  margin-left: 30px;
+}
+
+article .entry-content .table-of-contents ol li {
+  line-height: 1.5;
+}
+
+article .entry-content .table-of-contents ol li:last-child {
+  padding-bottom: 1em;
+}
+
+@media screen and (max-width: 800px) {
+  .navbar-menu {
+    position: relative;
+  }
+  .slide-bar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 250px;
+    background-color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: all linear 0.25s;
+  }
+  .slide-bar.is-active {
+    visibility: visible;
+    opacity: 100;
+  }
+  .humberger {
+    display: block;
+  }
+  nav ul li {
+    display: block;
+    margin-left: 10%;
+    line-height: 35px;
+    position: relative;
+  }
+
+  .container {
+    font-size: 14px;
+  }
+
+  .site-content {
+    font-size: 12px;
+  }
+
+  div .site-content .content-area {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  article .entry-content .table-of-contents {
+    width: 75%;
+  }
+  .container {
+    background-color: #ffffff;
+    width: 90%;
+    margin: 0 auto;
+  }
+  header .logo {
+    width: 30%;
+  }
+}
