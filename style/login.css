@@ -1,10 +1,10 @@
-body{
+/* body{
     font-family: "Roboto", sans-serif;
     background: url(../img/rok-wallpaper-14-scaled.jpg);
-    /* background-position-y: -400px;
-    background-position-x: -500px; */
+     background-position-y: -400px;
+    background-position-x: -500px; 
     background-size: cover;
-}
+} */
 
 body #wrapper {
     min-height: 100vh;
