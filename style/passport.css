@@ -1,12 +1,12 @@
 .container {
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.5);;
   width: 70%;
   margin: 0 auto;
 }
 
 header .logo {
   padding: 0em;
-  background: #c2f895;
+  /* background: #c2f895; */
   width: 15%;
 }
 
@@ -73,7 +73,7 @@ nav ul li a:hover::before {
 }
 
 div .site-content {
-  background: #b87878;
+  /* background: #b87878; */
   padding: 1em;
 }
 
@@ -144,7 +144,7 @@ table thead th {
     width: 75%;
   }
   .container {
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.5);;
     width: 90%;
     margin: 0 auto;
   }

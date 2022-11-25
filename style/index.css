@@ -1,12 +1,13 @@
 .container {
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
+  background: rgba(255, 255, 255, 0.5);
   width: 70%;
   margin: 0 auto;
 }
 
 header .logo {
   padding: 0em;
-  background: #c2f895;
+  /* background: #c2f895; */
   width: 15%;
 }
 
@@ -73,7 +74,7 @@ nav ul li a:hover::before {
 }
 
 div .site-content {
-  background: #b87878;
+  /* background: #b87878; */
   padding: 1em;
   display: flex;
   column-gap: 20px;
@@ -82,7 +83,7 @@ div .site-content {
 
 div .site-content .content-area {
   width: 65%;
-  background: #bbe44c;
+  /* background: #bbe44c; */
   display: block;
   /*area này độc lập 
     sau nó sẽ có khoảng cách*/
@@ -117,6 +118,9 @@ div .site-content .content-area {
 article .content-name {
   font-weight: bold;
 }
+h1 {
+  font-size: 24px;
+}
 
 h2,
 h3,
@@ -124,15 +128,15 @@ h4,
 h5,
 h6 {
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.2px;
 }
 
 article .entry-author {
   font-size: 85%;
-  color: #999;
+  color: rgb(104, 104, 104);
   margin-bottom: 1em;
 
-  background: #fcbed0;
+  /* background: #fcbed0; */
 }
 
 article .entry-image img {
@@ -142,7 +146,7 @@ article .entry-image img {
 
 article .entry-content {
   padding-left: 1.2em;
-  background: #6efce4;
+  /* background: #6efce4; */
   padding-bottom: 10px;
 }
 
@@ -163,7 +167,7 @@ article .entry-content p a:hover {
 }
 
 article .entry-content .table-of-contents {
-  background: #f3f4f4;
+  background: rgba(229, 229, 229, 0.5);
   margin-bottom: 1em;
   width: 60%;
 }
@@ -191,6 +195,9 @@ article .entry-content .table-of-contents ol li:last-child {
 @media screen and (max-width: 800px) {
   .navbar-menu {
     position: relative;
+  }
+  h1 {
+    font-size: 18px;
   }
   .slide-bar {
     position: absolute;
@@ -241,7 +248,7 @@ article .entry-content .table-of-contents ol li:last-child {
     width: 75%;
   }
   .container {
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.5);
     width: 90%;
     margin: 0 auto;
   }
