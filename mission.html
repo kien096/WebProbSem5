@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="HTML, lab" />
+    <meta name="description" content="Help you some information about ROK" />
+    <meta name="author" content="Ле Ба Киен M33112" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>KienLe Web</title>
+    <!-- <link rel="stylesheet" href="style/styles.css"> -->
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/global.css" />
+    <!-- <link rel="stylesheet" href="style/passport.css" /> -->
+    <link rel="stylesheet" href="/style/index.css" />
+    <link rel="stylesheet" href="style/mission.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- #header -->
+      <header>
+        <img class="logo" src="img/logo_m1.png" alt="logo" />
+      </header>
+
+      <!-- #menu bar -->
+      <nav class="navbar-menu">
+        <div class="humberger"><i class="fa-solid fa-bars"></i></div>
+        <ul class="slide-bar">
+          <li><a href="index.html">Overview</a></li>
+          <li><a href="#">Champions</a></li>
+          <li><a href="passport.html">Passports</a></li>
+          <li><a href="mission.html">Missions</a></li>
+          <li><a href="#">Highlight</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+        <div></div>
+      </nav>
+      <div id="content" class="site-content">
+        <div class="todo">
+          <form class="todo-form" autocomplete="off">
+            <input
+              type="text"
+              name="todo"
+              placeholder="Enter your task"
+              class="todo-input"
+            />
+            <button class="todo-submit" type="submit">Add</button>
+          </form>
+          <div class="todo-list">
+            <!-- <div class="todo-item">
+                <span class="todo-text">Learning english</span>
+                <i class="fa fa-trash todo-remove" data-value="Learning english"></i>
+              </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/mission.js"></script>
+</html>
