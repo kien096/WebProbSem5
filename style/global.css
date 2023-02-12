@@ -1,0 +1,9 @@
+body {
+  color: #333333;
+  /* background-color: #f9f8f5; */
+  background: url(../img/rok-wallpaper-14-scaled.jpg);
+  /* background-position-x: -500px; */
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
